@@ -1,2 +1,0 @@
-tutorial
--DCATKIN_DEVEL_PREFIX=/home/farlnd3000/heven_catkin_ws/devel -DCMAKE_INSTALL_PREFIX=/home/farlnd3000/heven_catkin_ws/install -G Unix Makefiles
