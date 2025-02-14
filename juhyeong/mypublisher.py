@@ -1,16 +1,19 @@
 #!/usr/bin/env python3
 
 import rospy
-from std_msgs.msg import String
+from std_msgs.msg import Int32
+
+count = 1
 
 def talker():
-	pub = rospy.Publisher('my_msg', String, queue_size=10)
+	global count
+	pub = rospy.Publisher('my_msg', Int32, queue_size=10)
 	rospy.init_node('talker_node', anonymous=True)
 	rate = rospy.Rate(10)
 	
 	while not rospy.is_shutdown():
-		hello_str = "hello world"
-		pub.publish(hello_str)
+		count += 1
+		pub.publish(count)
 		rospy.loginfo("==Pusblishing...")
 		rate.sleep()
 
