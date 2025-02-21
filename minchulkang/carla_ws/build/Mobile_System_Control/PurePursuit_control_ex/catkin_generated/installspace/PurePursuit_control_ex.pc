@@ -1,0 +1,8 @@
+prefix=/home/minchul/carla_ws/install
+
+Name: PurePursuit_control_ex
+Description: Description of PurePursuit_control_ex
+Version: 0.0.0
+Cflags: -I${prefix}/include
+Libs: -L${prefix}/lib 
+Requires: geometry_msgs roscpp rospy std_msgs visualization_msgs

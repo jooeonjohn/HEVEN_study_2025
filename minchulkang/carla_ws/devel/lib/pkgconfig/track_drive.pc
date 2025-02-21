@@ -1,0 +1,8 @@
+prefix=/home/minchul/carla_ws/devel
+
+Name: track_drive
+Description: Description of track_drive
+Version: 0.0.0
+Cflags: -I/home/minchul/carla_ws/devel/include
+Libs: -L${prefix}/lib 
+Requires: cv_bridge message_runtime rospy sensor_msgs std_msgs

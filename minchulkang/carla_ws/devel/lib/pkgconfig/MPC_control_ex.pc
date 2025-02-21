@@ -1,0 +1,8 @@
+prefix=/home/minchul/carla_ws/devel
+
+Name: MPC_control_ex
+Description: Description of MPC_control_ex
+Version: 0.0.0
+Cflags: -I/home/minchul/carla_ws/src/Mobile_System_Control/MPC_control_ex/include
+Libs: -L${prefix}/lib 
+Requires: geometry_msgs roscpp rospy std_msgs visualization_msgs tf
